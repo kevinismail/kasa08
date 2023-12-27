@@ -1,0 +1,84 @@
+/*** Home ***/
+.Home {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+
+    @include mobile {
+        margin: 25px auto;
+    }
+
+    &__banner br {
+        display: none;
+
+        @include mobile {
+            display: block;
+        }
+    }
+
+    &__banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &::after {
+            @include darken_banner
+        }
+
+        &_img {
+            display: flex;
+            width: 86%;
+            height: 223px;
+            border-radius: 25px;
+            object-fit: cover;
+
+            @include mobile {
+                height: 111px;
+                border-radius: 10px;
+            }
+        }
+
+        &_text {
+            position: absolute;
+            color: $color-white;
+            font-size: 48px;
+            z-index: 2;
+
+            @include mobile {
+                font-size: 24px;
+                left: 45px;
+                line-height: 100%;
+            }
+        }
+    }
+
+    &__cardlist {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        overflow: auto;
+        box-sizing: border-box;
+        width: 86%;
+        height: 829px;
+        border-radius: 25px;
+        padding: 56px 50px 43px;
+        margin: 43px auto 0px;
+        gap: 60px 50px;
+        background-color: $color-home-cardlist;
+
+        @include mobile {
+            border-radius: 10px;
+            padding: 0;
+            margin: 22px auto 0px;
+            gap: 20px;
+            background-color: $color-white;
+        }
+
+        & a {
+            @include mobile {
+                padding: auto;
+            }
+        }
+    }
+}

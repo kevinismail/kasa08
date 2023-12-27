@@ -1,0 +1,68 @@
+/*** Collapse ***/
+.Collapse {
+    background-color: $color-home-cardlist;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    &__title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $color-kasa-red;
+        color: $color-white;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 18px;
+        padding: 10px 15px;
+        margin: 0;
+
+        @include mobile {
+            font-size: 13px;
+        }
+
+        .Arrow {
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+
+            @include mobile {
+                width: 23px;
+                height: 22px;
+            }
+        }
+
+        .Arrow__up {
+            transform: rotate(-180deg);
+        }
+
+        .Arrow__down {
+            transform: rotate(0deg);
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+        padding: 20px;
+        font-size: 16px;
+        color: $color-kasa-red;
+        transition:
+            visibility 0.5s ease-in-out,
+            height 0.2s ease-in-out,
+            opacity 0.5s ease-in-out;
+            
+        @include mobile {
+            font-size: 12px;
+        }
+    }
+
+    &__content_hidden {
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+    }
+}

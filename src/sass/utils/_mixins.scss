@@ -1,0 +1,23 @@
+/*** Mixins ***/
+@mixin mobile {
+    @media (max-width: $breakpoint-mobile) {
+        @content;
+    }
+}
+
+@mixin darken_banner {
+    content: "";
+    position: absolute;
+    width: 86%;
+    border-radius: 25px;
+    top: 0;
+    left: 7%;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+
+    @include mobile {
+        border-radius: 10px;
+    }
+}

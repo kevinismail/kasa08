@@ -1,0 +1,61 @@
+/*** Carousel ***/
+.Carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    width: 86%;
+    height: 415px;
+    border-radius: 25px;
+    margin: 0 auto;
+
+    @include mobile {
+        height: 255px;
+    }
+
+    &__img {
+        height: 415px;
+        object-fit: cover;
+        z-index: 1;
+
+        @include mobile {
+            height: 255px;
+        }
+    }
+
+    &__arrow-left {
+        position: absolute;
+        cursor: pointer;
+        left: 23px;
+
+        @include mobile {
+            height: 24px;
+            left: 10px;
+        }
+    }
+
+    &__arrow-right {
+        position: absolute;
+        cursor: pointer;
+        right: 23px;
+
+        @include mobile {
+            height: 24px;
+            right: 10px;
+        }
+    }
+
+    &__img_count {
+        position: absolute;
+        font-size: 18px;
+        font-weight: 500;
+        bottom: 10px;
+        color: $color-white;
+
+        @include mobile {
+            display: none;
+        }
+    }
+}

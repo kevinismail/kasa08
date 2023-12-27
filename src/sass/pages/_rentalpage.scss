@@ -1,0 +1,13 @@
+/*** Rental Page ***/
+.RentalPage {
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        margin: 50px auto;
+
+        @include mobile {
+            margin: 12px auto;
+        }
+    }
+}
