@@ -41,8 +41,10 @@
 
         &_text {
             position: absolute;
+            flex: 1 1 0;
+            min-width: 0;
             color: $color-white;
-            font-size: 48px;
+            font-size: 3.34vw;
             z-index: 2;
 
             @include mobile {
