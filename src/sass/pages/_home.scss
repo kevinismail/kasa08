@@ -56,18 +56,17 @@
     }
 
     &__cardlist {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        display: grid;
         //overflow: auto;
         box-sizing: border-box;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
         width: 86%;
         // height: 829px;
         height: auto;
         border-radius: 25px;
-        padding: 56px 50px 43px;
+        padding: 50px;
         margin: 43px auto 0px;
-        gap: 60px 50px;
+        gap:  50px;
         background-color: $color-home-cardlist;
 
         @include mobile {
