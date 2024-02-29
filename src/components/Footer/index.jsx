@@ -1,4 +1,3 @@
-import '../../sass/main.css'
 import kasaFoot from '../../data/kasalogofoot.png'
 
 export default function Footer() {

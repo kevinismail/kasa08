@@ -1,4 +1,3 @@
-import '../../sass/main.css'
 import arrowLeft from '../../data/arrow_left.png'
 import arrowRight from '../../data/arrow_right.png'
 import { useState } from 'react'

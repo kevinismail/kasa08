@@ -1,6 +1,5 @@
 import Collapse from '../../components/Collapse'
 import aboutImg from '../../data/mountains.jpg'
-import '../../sass/main.css'
 
 export default function About() {
     return (

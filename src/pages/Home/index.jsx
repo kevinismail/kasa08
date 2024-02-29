@@ -1,4 +1,3 @@
-import '../../sass/main.css';
 import Card from '../../components/Card';
 import homeImg from '../../data/seafront.jpg';
 import cardData from '../../data/logements.json';

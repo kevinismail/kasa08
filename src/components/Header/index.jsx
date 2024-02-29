@@ -1,4 +1,3 @@
-import '../../sass/main.css'
 import { Link } from 'react-router-dom'
 import logoHeader from '../../data/kasalogo.png'
 

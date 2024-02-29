@@ -1,4 +1,3 @@
-import '../../sass/main.css';
 import Carousel from '../../components/Carousel';
 import Collapse from '../../components/Collapse';
 import rentalData from '../../data/logements.json';
