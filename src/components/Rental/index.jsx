@@ -1,13 +1,10 @@
+import React, { useEffect, useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 import Carousel from '../../components/Carousel';
 import Collapse from '../../components/Collapse';
 import rentalData from '../../data/logements.json';
-import starRed from '../../data/starRed.png';
-import starGrey from '../../data/starGrey.png';
-import { useNavigate, useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react';
-
+import Rating from '../../components/Rating/stars';
 export default function Rental() {
-
     const idRental = useParams('id').id;
     const [imgCarousel, setImgCarousel] = useState([]);
     const dataRental = rentalData.find(data => data.id === idRental);
@@ -46,17 +43,8 @@ export default function Rental() {
                         </div>
                         <img src={dataRental.host.picture} alt='propriétaire du lieu' className='Rental__host_picture' />
                     </div>
-                    <div className='Rental__host_rating'>
-                        {/* Création d'un tableau avec la syntaxe de décomposition */}
-                        {[...Array(5)].map((star, index) => {
-                            const ratingScore = index + 1;
-                            return (
-                                <img key={index} src={ratingScore <= dataRental.rating ? starRed : starGrey} alt="étoile" />
-                            )
-                        })}
-                    </div>
+                    <Rating rating={dataRental.rating} /> {/* Utilisation du composant Rating */}
                 </div>
-
             </div>
             <div className="Rental__collapses">
                 <Collapse title={'Description'} className='Rental__collapses_item' content={dataRental.description} />
