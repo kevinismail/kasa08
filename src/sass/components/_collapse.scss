@@ -1,6 +1,6 @@
 /*** Collapse ***/
 .Collapse {
-    background-color: $color-home-cardlist;
+
     width: 100%;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -45,6 +45,7 @@
         display: flex;
         flex-direction: column;
         visibility: visible;
+        background-color: $color-home-cardlist;
         opacity: 1;
         height: auto;
         padding: 20px;
