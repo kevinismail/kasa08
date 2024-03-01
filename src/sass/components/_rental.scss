@@ -22,11 +22,13 @@
             font-weight: 500;
             margin-bottom: 5px;
             margin-top: 25px;
+            
 
             @include mobile {
                 font-size: 18px;
                 margin-top: 15px;
             }
+           
         }
 
         & h2 {
@@ -56,16 +58,16 @@
                 font-size: 14px;
                 background: $color-kasa-red;
                 color: $color-white;
-                min-width: 115px;
-                height: 25px;
+                width: 115px;
+                height: auto;
                 padding: 6px 15px 0px;
                 margin-right: 10px;
                 border-radius: 10px;
 
                 @include mobile {
                     font-size: 10px;
-                    min-width: auto;
-                    height: 18px;
+                    width: 84px;
+                    height: auto;
                     margin-bottom: 10px;
                 }
             }
@@ -148,7 +150,7 @@
 
     &__collapses {
         display: flex;
-        gap: 76px;
+        gap: 4vw;
         margin: 24px auto;
         width: 86%;
 

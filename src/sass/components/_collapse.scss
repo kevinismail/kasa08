@@ -51,10 +51,11 @@
         padding: 20px;
         font-size: 16px;
         color: $color-kasa-red;
+       
         transition:
-            visibility 0.5s ease-in-out,
-            height 0.2s ease-in-out,
-            opacity 0.5s ease-in-out;
+            visibility 0.9s ease-in-out,
+            height 0.9s ease-in-out,
+            opacity 0.1s ease-in-out;
             
         @include mobile {
             font-size: 12px;
@@ -65,5 +66,8 @@
         visibility: hidden;
         opacity: 0;
         height: 0;
+        
     }
 }
+
+  
