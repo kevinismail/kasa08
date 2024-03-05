@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kasa08/static/css/main.17b2b6e9.css",
+    "main.js": "/kasa08/static/js/main.c23e03f3.js",
+    "static/media/mountains.jpg": "/kasa08/static/media/mountains.796d007cebdd47cc489b.jpg",
+    "static/media/seafront.jpg": "/kasa08/static/media/seafront.0f820b85d9a6a7e177b3.jpg",
+    "index.html": "/kasa08/index.html",
+    "main.17b2b6e9.css.map": "/kasa08/static/css/main.17b2b6e9.css.map",
+    "main.c23e03f3.js.map": "/kasa08/static/js/main.c23e03f3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17b2b6e9.css",
+    "static/js/main.c23e03f3.js"
+  ]
+}
